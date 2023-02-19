@@ -5,8 +5,8 @@
 # Sites
 - This folder will hold all files for the diffeent or relatd sites I will build
 
-# flex-box
-- this folder will hold info for flex-box
+# Flex-box
+- This folder will hold info for flex-box
 
 # HTML
 
