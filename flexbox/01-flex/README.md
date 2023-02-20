@@ -27,5 +27,8 @@ adapt the display flex to become flex items
 ## flex-wrap
 - Changes the 'direction' of the content (photo-grid-items)
 - flex-wrap: wrap; ~ Content will flow to a new lign once it reaches the edge of the page
-- flex-direction: Changes the orientation of flec items into a stack *This flips axis for justify & align*
-- flecx-wrap: wrap-reversed; ~ Content will stack ontop of itself when it reaches the edge of the page
+- flex-wrap: wrap-reversed; ~ Content will stack ontop of itself when it reaches the edge of the page
+
+## flex-direction
+- flex-direction: column; ~ Changes the orientation of flec items into a stack *This flips axis for justify & align*
+- flex-direction: wrap-reversed; ~ This renders iems right to left on a per row basis (row 1 starting with 3 instead of 5)
