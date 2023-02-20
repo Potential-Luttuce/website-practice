@@ -46,7 +46,7 @@
 }
 
 /*.social,
-.logo,        /*To see dontent box
+.logo,        /*To see content box
 .subscribe {
   border: 1px solid #5995DA;
 }
@@ -71,8 +71,8 @@
   width: 300px;
   height: 300px;
 }
-/*
-.first-item {
+
+/*.first-item {
   order: 1;
 }
 /*Changes order of these items?
@@ -80,3 +80,9 @@
   order: -1;
 }
 */
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
