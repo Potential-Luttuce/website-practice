@@ -91,6 +91,12 @@
   display: flex;
   justify-content: space-between;
 }
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
 
 .footer-item {
   border: 1px solid #000000;
@@ -98,6 +104,7 @@
   height: 200px;
   flex: 1;
 }
+
 
 /*.footer-three {
   flex: 2; /*stretches or grows the item faster in the container
