@@ -33,3 +33,8 @@ adapt the display flex to become flex items
 ## flex-direction
 - flex-direction: column; ~ Changes the orientation of flec items into a stack *This flips axis for justify & align*
 - flex-direction: wrap-reversed; ~ This renders iems right to left on a per row basis (row 1 starting with 3 instead of 5)
+
+## order
+- Order changes the order of a flex item within its container without affecting other items
+### (Swapping 1 & 5 or first-item & last-item)
+- order: 1; / order: -1
