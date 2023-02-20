@@ -5,14 +5,8 @@
 }
 
 .menu-container {
-<<<<<<< HEAD
-  margin: 20px;
-  color: #fff;
-  background-color: #3772cb;  /* Blue */
-=======
   color: #fff;
   background-color: #5995DA;  /* Blue */
->>>>>>> 688dc7988b06e8164eba99fa975f781973d62a0e
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -21,9 +15,6 @@
 .menu {
   /*border: 1px solid #fff;  /* For debugging */
   width: 900px;
-<<<<<<< HEAD
-  justify-content: space-between;
-=======
   display: flex;
   justify-content: space-between;
 }
@@ -50,14 +41,48 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /*Vertial bc header has 
+  align-items: center;/*Vertial bc header has 
   explicit height and width*/
 }
 
-.social,
-.logo,
+/*.social,
+.logo,        /*To see content box
 .subscribe {
   border: 1px solid #5995DA;
->>>>>>> 688dc7988b06e8164eba99fa975f781973d62a0e
+}
+*/
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
 }
 
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*axis is inverted for justify & align with this command*/
+  flex-direction: row;
+  align-items: center; /*needed for flex-dirrection: column*/
+}
+
+.photo-grid-item {
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+}
+
+/*.first-item {
+  order: 1;
+}
+/*Changes order of these items?
+.last-item {
+  order: -1;
+}
+*/
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
