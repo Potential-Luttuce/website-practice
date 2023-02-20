@@ -3,7 +3,8 @@
 # flexbox 01
  - https://www.internetingishard.com/html-and-css/flexbox
  - This folder follow the above link through flexbox learning items
- - Index.html is follow along with site 
+ - flexbox.html & default.css follow along with site 
+ - I will add my own html & css to this folder to recreate from scratch 
  
 
 ## display: flex;
@@ -11,8 +12,8 @@
 - display: flex; ~ This line of code will make the parent or 
 container element display flex, making all its children
 adapt the display flex to become flex items
-- display: flexbox; ~ 
-- display: inline-block; ~ 
+- display: flex; ~ Makes current container flex container and all chidren of this container a flex item
+- display: inline-block; ~ Width & Height respcted adds whole block to line of text
 
 ### justify-content
 - horizontal x axis alignment 
