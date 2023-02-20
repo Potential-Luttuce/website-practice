@@ -58,3 +58,7 @@ adapt the display flex to become flex items.
 - Mixing and matching flexible items with fixed with items.
 ### Example:
 - In our footer footer-one & footer-three have a fixed width. This with is respected and footer-two will inherit flex: 1; (cascade rule specificity) and grow to fill the remaining space no matter how little it is.
+
+# Margin: auto;
+- This gives us same output as nesting our two link items (signup & login).
+- But instead it uses margin auto to use all available space in menu and pushes itself and login (the following flex item) to the right.
