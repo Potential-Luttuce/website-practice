@@ -58,6 +58,12 @@ adapt the display flex to become flex items.
 - Mixing and matching flexible items with fixed with items.
 ### Example:
 - In our footer footer-one & footer-three have a fixed width. This with is respected and footer-two will inherit flex: 1; (cascade rule specificity) and grow to fill the remaining space no matter how little it is.
+# flex shorthand
+- flex: 1; ~ Is short hand for:
+- flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+## Flex: shrink;
+- As expected this is the opposite of flex-grow. Items will shrink as a certain rate/percentage based off size of container
+- Review this page for isstance: https://www.theodinproject.com/lessons/foundations-growing-and-shrinking
 
 # Margin: auto;
 - This gives us same output as nesting our two link items (signup & login).
