@@ -61,9 +61,17 @@ adapt the display flex to become flex items.
 # flex shorthand
 - flex: 1; ~ Is short hand for:
 - flex-grow: 1; flex-shrink: 1; flex-basis: 0;
-## Flex: shrink;
-- As expected this is the opposite of flex-grow. Items will shrink as a certain rate/percentage based off size of container
+## flex-grow:
+- Setting flex-grow to 1 will make all items grow to same size and fill parent container.
+- Setting flex-grow toa numerical value for ONE specific item will make that item grow differently relative to other itmes, whether they are fixed or also flex with a different grow or shrink value.
+## Flex-shrink:
+-Applys only if size of all flex items is greater than parent container.
+- As expected this is the opposite of flex-grow. Items will shrink as a certain rate/percentage based off size of container.
 - Review this page for isstance: https://www.theodinproject.com/lessons/foundations-growing-and-shrinking
+## Flex-bases:
+- This sets the baseline from where we shrink or grow.
+- Default is 0 when you specify flex: 1 (flex: 1 1 0).
+- Flex: auto is same as flex: 1 1 0.
 
 # Margin: auto;
 - This gives us same output as nesting our two link items (signup & login).
