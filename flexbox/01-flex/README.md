@@ -19,7 +19,7 @@ adapt the display flex to become flex items
 - horizontal x axis alignment 
 - justify-content: center; ~ This line will align the flex container within th bounds of the allowed space
 - justify-content: flex-end/start; ~ Starts the content towards the start or end of the parent flex container 
-## Example:
+### Example:
 - (Links in menu: this was done with the help of groupng these two divs together)
 - justify-content: space-between; ~ Adds space between each flex item in the container (Header)
 
@@ -40,11 +40,17 @@ adapt the display flex to become flex items
 - *This flips axis for justify & align*
 - flex-direction: column; ~ Changes the orientation of flec items into a stack 
 - flex-direction: wrap-reversed; ~ This renders iems right to left on a per row basis 
-## Example:
+### Example:
 - (row 1 starting with 3 instead of 5)
 
 # ~ order ~
 - Order changes the order of a flex item within its container without affecting other items
-## Example:
+### Example:
 - (Swapping 1 & 5 or first-item & last-item)
 - order: 1; / order: -1
+
+# ~ flex ~
+- *This is similar to justify-content except the extra spaces is put into the items themselves so they take up more room and fit into the container fully*
+- flex: 1; ~ Tella the items selected to stretch and match width of their container 
+### Example:
+- Flex-three can be stretced twice as fast when flex: 2; is added
