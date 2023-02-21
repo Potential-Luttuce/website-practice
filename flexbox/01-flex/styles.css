@@ -1,5 +1,24 @@
+/*border: 1px solid #fff;  /* For debugging */
+
 * {
+  border: 1px solid #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-container {
+  color: white;
+  display: flex;
+  padding: 20px;
+  background: #658864;
+  justify-content: center;
+}
+
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
 }
