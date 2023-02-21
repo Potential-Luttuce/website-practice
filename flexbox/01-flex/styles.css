@@ -48,16 +48,26 @@
 }
 
 .content-container {
-  color:#000000;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.photo-grid {
+  flex-wrap: row;
+  flex-direction: row;
+  align-items: center;
 }
 
 .item {
+  margin: 5px;
   background: #EEEEEE;
-  display: ;
+  display: flex;
   justify-content: space-between;
   padding: 50px;
+}
+
+.week {
+  display: flex;
+  flex-wrap: wrap;
 }
