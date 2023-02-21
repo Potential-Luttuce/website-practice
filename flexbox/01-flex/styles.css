@@ -1,8 +1,8 @@
 /*border: 1px solid #fff;  /* For debugging */
 
 * {
+  border: 1px solid #fff;  
   background: #B7B78A;
-  border: 1px solid #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,21 +18,38 @@
 }
 
 .header-container {
-  color: #ecd79b;
+  color: #ffffff;
   padding: 75px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-.header1 {
-  display: flex;
-  width: 900px;
-  justify-content: flex-start;
+.header {
+  font-weight: 700;
+  font-size: 32px;
+  background: #bc6c25;
   padding: 20px;
-  margin: 5px;
 }
 
 .menu {
   width: 900px;
   display: flex;
   justify-content: space-between;
+}
+
+.edge {
+  font-size: 24px;
+  color: #000000;
+  width: 100px;
+  background: #ecd79b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  color:#000000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
