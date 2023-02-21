@@ -1,6 +1,7 @@
 /*border: 1px solid #fff;  /* For debugging */
 
 * {
+  background: #B7B78A;
   border: 1px solid #fff;
   margin: 0;
   padding: 0;
@@ -16,6 +17,19 @@
   justify-content: center;
 }
 
+.header-container {
+  color: #ecd79b;
+  padding: 75px;
+  justify-content: center;
+}
+
+.header1 {
+  display: flex;
+  width: 900px;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 5px;
+}
 
 .menu {
   width: 900px;
