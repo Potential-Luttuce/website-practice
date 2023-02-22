@@ -73,6 +73,21 @@ adapt the display flex to become flex items.
 - This sets the baseline from where we shrink or grow.
 - Default is 0 when you specify flex: 1 (flex: 1 1 0).
 - Flex: auto is same as flex: 1 1 0.
+ 
+ ### Example
+ *one box growing faster after ideal size met*
+ .container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+.home {
+  flex: 1 1 200px;
+}
+
+.logout {
+  flex: 10 1 200px; < shrink 1 under 200px, grow 10 above 200px
+}
 
 # Margin: auto;
 - This gives us same output as nesting our two link items (signup & login).
