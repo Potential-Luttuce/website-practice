@@ -61,6 +61,7 @@ adapt the display flex to become flex items.
 # flex shorthand
 - flex: 1; ~ Is short hand for:
 - flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+- *flec: <max> <min> <ideal size>
 ## flex-grow:
 - Setting flex-grow to 1 will make all items grow to same size and fill parent container.
 - Setting flex-grow toa numerical value for ONE specific item will make that item grow differently relative to other itmes, whether they are fixed or also flex with a different grow or shrink value.
