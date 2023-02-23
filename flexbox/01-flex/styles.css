@@ -56,21 +56,16 @@
 .photo-grid {
   display: flex;
   border: 5px solid black;
+  justify-content: center;
   flex-wrap: row;
   flex-direction: row;
-  align-items: center;
-  margin: 250px;
-  width: 500px;
 }
 
 .photo-grid-item {
   margin: 5px;
-  background: #EEEEEE;
   display: flex;
   justify-content: space-between;
-  padding:  opx
+  padding:  opx;
+  flex-grow: o;
 }
 
-.photo-grid-item {
-  flex: 1;
-}
