@@ -17,6 +17,13 @@
   justify-content: center;
 }
 
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .header-container {
   color: #ffffff;
   padding: 75px;
@@ -31,12 +38,6 @@
   padding: 20px;
 }
 
-.menu {
-  width: 900px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .edge {
   font-size: 24px;
   color: #000000;
@@ -49,14 +50,14 @@
 
 .content-container {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: center;
 }
 
 .photo-grid {
   flex-wrap: row;
   flex-direction: row;
   align-items: center;
+  margin: 250px;
 }
 
 .item {
@@ -70,4 +71,8 @@
 .week {
   display: flex;
   flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  flex: 1;
 }
