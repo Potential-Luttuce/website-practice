@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row; /*What does this actually do*/
+  flex-direction: row; /*What does this actually do?*/
   align-items: center;
 }
 .footer-container {
