@@ -62,16 +62,22 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
 .footer-container {
   background-color: #292524;
   color: #fff;
-  height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 
 .footer-item {
-  width: 300px;
+  height: 100px;
 }
 
+.footer1,
+.footer3 {
+  background: #78716c;
+  flex: initial;
+  width: 300px;
+ }
