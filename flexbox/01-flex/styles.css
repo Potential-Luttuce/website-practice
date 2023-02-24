@@ -44,19 +44,22 @@
   align-self: flex-end;
 }
 
-.photo-grid {
-  display: flex;
-  border: 5px solid black;
-  justify-content: center;
-  flex-wrap: row;
-  flex-direction: row;
+.logo {
+  font-weight: bold;
+  font-size: 32px;
 }
 
-.photo-grid-item {
-  margin: 5px;
+.content-grid-container {
+  background-color: #d1d1d1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer-container {
+  background-color: #292524;
+  color: #fff;
   display: flex;
   justify-content: space-between;
-  padding:  opx;
-  flex-grow: o;
 }
 
