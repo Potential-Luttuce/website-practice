@@ -65,7 +65,13 @@
 .footer-container {
   background-color: #292524;
   color: #fff;
+  height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer-item {
+  width: 300px;
 }
 
