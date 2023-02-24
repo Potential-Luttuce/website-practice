@@ -1,8 +1,7 @@
 /*border: 1px solid #fff;  /* For debugging */
 
-* {
-  border: 1px solid #fff;  
-  background: #B7B78A;
+* { 
+  border: 1px solid #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,10 +9,10 @@
 }
 
 .menu-container {
-  color: white;
-  display: flex;
-  padding: 20px;
   background: #658864;
+  color: white;
+  padding: 20px 0;
+  display: flex;
   justify-content: center;
 }
 
@@ -23,35 +22,27 @@
   justify-content: space-between;
 }
 
-
 .header-container {
+  background: #B7B78A;
   color: #ffffff;
-  padding: 75px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header {
-  font-weight: 700;
-  font-size: 32px;
+  width: 600px;
+  height: 300px;
   background: #bc6c25;
-  padding: 20px;
-}
-
-.edge {
-  font-size: 24px;
-  color: #000000;
-  width: 100px;
-  background: #ecd79b;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-/* .content-container {
+.media,
+.subscribe {
   display: flex;
-  justify-content: center;
-} */
+  align-self: flex-end;
+}
 
 .photo-grid {
   display: flex;

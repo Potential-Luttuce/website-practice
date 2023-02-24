@@ -1,4 +1,5 @@
 * {
+  border: 1px solid #fff;
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -17,12 +18,6 @@
   width: 900px;
   display: flex;
   justify-content: space-between;
-}
-
-.links {
-  /*border: 1px solid Black;  /* For debugging */
-  display: flex;
-  justify-content: flex-end;
 }
 
 .login {
