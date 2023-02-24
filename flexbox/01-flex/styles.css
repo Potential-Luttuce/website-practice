@@ -55,7 +55,14 @@
   justify-content: center;
 }
 
-
+.content-grid {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /*What does this actually do*/
+  align-items: center;
+}
 .footer-container {
   background-color: #292524;
   color: #fff;
