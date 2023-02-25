@@ -1,5 +1,43 @@
 * {
-    border: 1px solid black;
-    margin: 5px;
+    /* border: 1px solid black; */
+    /* margin: 5px; */
     padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    border: 2px solid greenyellow;
+    display: flex;
+}
+
+.header-container {
+    border: 2px solid rgb(102, 51, 153);
+    display: flex;
+    justify-content: center;
+}
+
+.edge {
+    font-size: 40px;
+}
+
+/* Try to get header at same 'baseline'
+as the  + symbols */
+
+.content-container {
+    border: 2px solid #8efa01;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    border: 2px solid hsl(0, 76%, 44%);
+    padding: 30px;
+    display: flex;
 }
