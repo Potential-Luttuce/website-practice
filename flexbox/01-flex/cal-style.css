@@ -52,7 +52,7 @@ as the  + symbols */
     /* padding-left: 25px; */
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
 }
 
@@ -60,7 +60,6 @@ as the  + symbols */
     border: 2px solid black;
     display: flex;
     margin-top: 20px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
