@@ -1,6 +1,6 @@
 * {
     /* border: 1px solid black; */
-    /* margin: 5px; */
+    margin: 18px;
     padding: 0px;
     box-sizing: border-box;
     /* display: flex;
@@ -8,7 +8,14 @@
     flex-direction: column; */
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .nav-container {
+    width: 900px;
     border: 2px solid blue;
     display: flex;
     justify-content: center;
@@ -20,6 +27,7 @@
 }
 
 .header-container {
+    width: 900px;;
     border: 2px solid rgb(102, 51, 153);
     display: flex;
     justify-content: center;
@@ -42,10 +50,20 @@ as the  + symbols */
     justify-content: flex-start;
 }
 
+.calendar {
+    border: 2px solid black;
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 div.item {
     border: 2px solid hsl(0, 76%, 44%);
     padding: 30px;
     display: flex;
+    flex: 1;
 }
 
 /* Trying to get number in each item
@@ -53,7 +71,7 @@ to sit in the corner */
 
 .last-three {
     /* border: 2px solid hsl(229, 81%, 33%); */
-    padding: 2px;
     display: flex;
-    justify-self: flex-start;
+    margin: 0;
+    /* justify-self: flex-start; */
 }
