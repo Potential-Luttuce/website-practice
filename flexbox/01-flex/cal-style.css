@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 18px;
     padding: 0px;
     box-sizing: border-box;
@@ -22,8 +22,14 @@ body {
 }
 
 .nav {
+    width: 900px;
     border: 2px solid greenyellow;
     display: flex;
+}
+
+.nav2 {
+    display: flex;
+    margin-right: auto;
 }
 
 .header-container {
