@@ -1,5 +1,5 @@
 * {
-    margin: 18px;
+    margin: 0;
     padding: 0px;
     box-sizing: border-box;
     /* display: flex;
@@ -7,25 +7,23 @@
     flex-direction: column; */
 }
 
-body {
-    border: 2px solid rgb(223, 35, 35);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1;
-}
+
 
 .nav-container {
-    
+    margin: 5px;;
     border: 2px solid blue;
     display: flex;
-    justify-content: center;
 }
 
 .nav {
-    
+    margin: 5px;
     border: 2px solid greenyellow;
     display: flex;
+    flex: 1;
+}
+
+.nav-item {
+    margin: 5px;
 }
 
 .nav2 {
@@ -34,7 +32,7 @@ body {
 }
 
 .header-container {
-    width: 900px;;
+    margin: 5px;
     border: 2px solid rgb(102, 51, 153);
     display: flex;
     justify-content: center;
@@ -50,19 +48,21 @@ body {
 
 
 .content-container {
-    width: 900px;
+  
     border: 2px solid #8efa01;
     /* padding-left: 25px; */
     margin-top: 20px;
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: flex-start;
+    justify-content: center;
+  
+    
 }
 
 .calendar {
     border: 2px solid black;
     display: flex;
-    margin-top: 20px;
+    margin: 20px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
