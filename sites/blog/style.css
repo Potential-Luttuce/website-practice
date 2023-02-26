@@ -1,4 +1,27 @@
 * {
+    /* border: 1px solid white; */
     background-color: black;
     color: aliceblue;
 }
+
+html {
+    border: 1px solid red;
+}
+
+/* Flex containers */
+.title,
+.nav {
+    display: flex;
+}
+
+.nav {
+    display:flex;
+    align-items: flex-end;
+}
+
+.nav {
+    width: 100px;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
