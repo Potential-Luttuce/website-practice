@@ -46,22 +46,30 @@
 }
 
 
+/* Need container to be span of available space
+so calendar can be centered */
 
 .content-container {
-    /* border: 2px solid #8efa01; */
-    /* padding-left: 25px; */
+    border: 2px solid #8efa01;
     margin-top: 20px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
-  
-    
+   
+}
+
+.cal-container {
+    border: 2px solid #0a30c9;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .calendar {
-    /* border: 2px solid black; */
+    border: 2px solid black;
+    width: 1250px;
     display: flex;
     margin: 20px;
+    padding-left: 40px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
@@ -70,10 +78,13 @@ div.item {
     height: auto;
     width: auto;
     border: 1px solid hsl(0, 0%, 0%);
-    padding: 30px;
+    padding: 75px;
     margin: 1px;
-    /* display: flex;
-    flex: 1; */
+    /* display: none; */
+    /* flex: 1; */
+
+     /* Hide the text. */
+     color: transparent;
 }
 
 /* Trying to get number in each item
