@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    background: rgb(194, 167, 217);
     /* display: flex;
     flex-wrap: wrap;
     flex-direction: column; */
@@ -10,14 +11,15 @@
 
 
 .nav-container {
+    
     margin: 5px;;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
 }
 
 .nav {
     margin: 5px;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     display: flex;
     flex: 1;
 }
@@ -33,7 +35,7 @@
 
 .header-container {
     margin: 5px;
-    border: 2px solid rgb(102, 51, 153);
+    /* border: 2px solid rgb(102, 51, 153); */
     display: flex;
     justify-content: center;
 }
@@ -50,7 +52,7 @@
 so calendar can be centered */
 
 .content-container {
-    border: 2px solid #8efa01;
+    /* border: 2px solid #8efa01; */
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -58,14 +60,14 @@ so calendar can be centered */
 }
 
 .cal-container {
-    border: 2px solid #0a30c9;
+    /* border: 2px solid #0a30c9; */
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
 .calendar {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 1250px;
     display: flex;
     margin: 20px;
