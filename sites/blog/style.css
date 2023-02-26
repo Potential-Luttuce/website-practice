@@ -9,23 +9,24 @@ html {
     border: 1px solid white;
 }
 
+/* Flex containers */
+.title,
+.nav,
+.pic-container,
+.article-container,
+.middle-container,
+.article-title,
+.date{
+    display: flex;
+}
+
 .title,
 .pic-container,
 .article {
     border-bottom: 1px solid red;
 }
 
-/* Flex containers */
-.title,
-.nav,
-.pic-container,
-.article-container,
-.middle-container{
-    display: flex;
-}
-
-.nav {
-    display:flex;
+.nav{
     align-items: flex-end;
 }
 
@@ -42,11 +43,24 @@ html {
     justify-content: center;
 }
 
- img {
+ .pic-container img {
     width: 900px;
  }
 
 .article {
     margin: 5px;
+}
+
+.date {
+    font-size: 10px;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+.middle-container {
+    /* border: 1px solid white; */
+    margin-top: 15px;
+    /* flex-wrap: wrap; */
 }
 
