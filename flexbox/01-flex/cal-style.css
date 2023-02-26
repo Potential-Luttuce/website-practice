@@ -1,5 +1,4 @@
 * {
-    border: 1px solid black;
     margin: 18px;
     padding: 0px;
     box-sizing: border-box;
@@ -9,20 +8,22 @@
 }
 
 body {
+    border: 2px solid rgb(223, 35, 35);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex: 1;
 }
 
 .nav-container {
-    width: 900px;
+    
     border: 2px solid blue;
     display: flex;
     justify-content: center;
 }
 
 .nav {
-    width: 900px;
+    
     border: 2px solid greenyellow;
     display: flex;
 }
@@ -39,12 +40,14 @@ body {
     justify-content: center;
 }
 
+.header,
 .edge {
+    display: flex;
+    align-self: center;
     font-size: 40px;
 }
 
-/* Try to get header at same 'baseline'
-as the  + symbols */
+
 
 .content-container {
     width: 900px;
