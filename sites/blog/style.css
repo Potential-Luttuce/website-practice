@@ -5,12 +5,17 @@
 }
 
 html {
-    border: 1px solid red;
+    border: 1px solid white;
+}
+
+.title {
+    border: 1px solid red
 }
 
 /* Flex containers */
 .title,
-.nav {
+.nav,
+.pic-container {
     display: flex;
 }
 
@@ -20,8 +25,16 @@ html {
 }
 
 .nav {
-    width: 100px;
+    width: 120px;
     margin-left: auto;
     justify-content: space-between;
 }
+
+.pic-container {
+    border:3px solid  rgb(8, 64, 248);
+    justify-content: center;
+}
+ img {
+    width: 900px;
+ }
 
