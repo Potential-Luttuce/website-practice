@@ -1,5 +1,6 @@
 * {
     /* border: 1px solid white; */
+    /* margin: 2px; */
     background-color: black;
     color: aliceblue;
 }
@@ -8,15 +9,18 @@ html {
     border: 1px solid white;
 }
 
-.title {
-    border: 1px solid red
+.title,
+.pic-container,
+.article {
+    border-bottom: 1px solid red;
 }
 
 /* Flex containers */
 .title,
 .nav,
 .pic-container,
-.content-container {
+.article-container,
+.middle-container{
     display: flex;
 }
 
@@ -34,10 +38,15 @@ html {
 /* Change color and functions for buttons */
 
 .pic-container {
-    border:3px solid  rgb(8, 64, 248);
+    /* border:1px solid  rgb(8, 64, 248); */
     justify-content: center;
 }
+
  img {
     width: 900px;
  }
+
+.article {
+    margin: 5px;
+}
 
