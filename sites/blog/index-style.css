@@ -5,11 +5,10 @@
     color: aliceblue;
 }
 
-html {
+body {
     border: 5px solid white;
 }
 
-html, 
 body {
     height: 100%;
     width: 100%;
