@@ -51,6 +51,7 @@ body {
 
  .pic-container img {
     width: 900px;
+    flex: 1 1 auto;
  }
 
 .article {
@@ -67,6 +68,11 @@ body {
 .middle-container {
     /* border: 1px solid white; */
     margin-top: 15px;
+    display: flex;
     /* flex-wrap: wrap; */
+}
+
+.ipsum-pic {
+    flex: 1 1 auto;
 }
 
