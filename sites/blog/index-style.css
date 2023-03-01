@@ -10,7 +10,7 @@ body {
 }
 
 html {
-    border: 5px solid plum;
+    /* border: 5px solid plum; */
 }
 
 html {
@@ -70,7 +70,6 @@ html {
 }
 
 .middle-container {
-    border: 1px solid yellow;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -78,7 +77,8 @@ html {
 }
 
 .ipsum-pic {
-    width: 50%;
+    /* width: 50%; */
+    align-self: center;
     flex: 1 1 auto;
 }
 
