@@ -1,9 +1,7 @@
 * {
     /* border: 1px solid black; */
-    background: rgb(85, 114, 101);
+    background: #557265;
 }
-
-
 
 .container {
     /* height: 400px; */
@@ -12,8 +10,13 @@
     padding-top: 200px;
 }
 
-.signup-container {
+.login-container {
     border: 2px solid pink;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    padding 10
+}   
 
