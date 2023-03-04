@@ -11,16 +11,13 @@ body {
 
 html {
     /* border: 5px solid plum; */
-}
-
-html {
     height: 100%;
     width: 100%;
 }
 
 
 /* Flex containers */
-.title,
+.mike-title,
 .nav,
 .pic-container,
 .article-container,
@@ -32,17 +29,21 @@ html {
 }
 
 /* Red Underline */
-.title,
+.mike-title,
 .pic-container,
 .article {
     border-bottom: 1px solid red;
 }
 
 .nav {
-    width: 120px;
+    border: 1px solid pink;
+    flex-basis: 150px;
     margin-left: auto;
-    justify-content: space-between;
+    margin-top: auto;
+    justify-content: flex-end;
     align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 /* Change color and functions for buttons */
