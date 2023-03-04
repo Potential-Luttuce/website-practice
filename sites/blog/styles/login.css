@@ -14,7 +14,7 @@
 
 .login-container {
     margin-top: auto;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
