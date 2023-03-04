@@ -59,6 +59,15 @@ html {
     flex: 1 1 auto;
  }
 
+ .search-container {
+    display: flex;
+    justify-content: center;
+ }
+
+ .search-box {
+    
+ }
+
 .article {
     margin: 5px;
 }
