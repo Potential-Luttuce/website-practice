@@ -1,16 +1,10 @@
 * {
     /* border: 1px solid white; */
-    /* margin: 2px; */
     background-color: #557265;
     color: aliceblue;
 }
 
-body {
-    /* border: 5px solid white; */
-}
-
 html {
-    /* border: 5px solid plum; */
     height: 100%;
     width: 100%;
 }
@@ -36,7 +30,6 @@ html {
 }
 
 .nav {
-    /* border: 1px solid pink; */
     flex-basis: 150px;
     margin-left: auto;
     margin-top: auto;
@@ -46,11 +39,8 @@ html {
     gap: 5px;
 }
 
-/* Change color and functions for buttons */
-
 /* Keyboard */
 .pic-container {
-    /* border:1px solid  rgb(8, 64, 248); */
     justify-content: center;
 }
 
@@ -62,10 +52,6 @@ html {
  .search-container {
     display: flex;
     justify-content: center;
- }
-
- .search-box {
-    
  }
 
 .article {
@@ -87,9 +73,13 @@ html {
 }
 
 .ipsum-pic {
-    /* width: 50%; */
     align-self: center;
     flex: 1 1 auto;
+}
+
+button, 
+a {
+    background: rgb(28, 182, 131);
 }
 
 /* .ipsum-container {
