@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inline JS Page</title>
+
+
+    <script>
+        // for functions section below -large text function
+        //Functions can be set in the header like this 
+        function mikesResizeFunction() {
+            document.getElementById('small').style.fontSize = '15px';
+        }
+    </script> 
 </head>
 <body>
     <h1>This Site has Inline JS ONLY! for learning</h1>
@@ -33,7 +42,35 @@
     <button type="button" onclick="document.getElementById('change-size').style.fontSize = '35px'"
     > click here to enlarge</button>
     <button type="button" onclick="document.getElementById('change-size').style.fontSize = '15px'"
-    > click here to shrink</button>
-   
+    > click here to shrink</button><hr>
+
+<!-- Hiding HTML elements with js -->
+    <h4> Hiding HTML lements with ss .style.display</h4>
+
+    <p id="hide"> make me dissapear!!! ahhh</p>
+
+    <button type="button" onclick="document.getElementById('hide').style.display = 'none'">
+    Click me to hide text</button>
+
+    <button type="button" onclick="document.getElementById('hide').style.display = 'block'">
+        Click me to show text</button><hr>
+
+ <!-- functions -->
+    <h4>functions! </h4>
+    <p id="small">Make me small Mike!</p>
+
+    <button type="button" onclick="mikesFunction()">click  to use Mikes function!</button>
+
+    <script>
+        // functions can be set in the script / body like this (or external)
+        function mikesFunction() {
+            document.getElementById('small').style.fontSize = '1px';
+        }
+    </script> 
+
+    <button type="button" onclick="mikesResizeFunction()">click  to use Mikes resize function!</button>
+    <hr>
+
+    
 </body>
 </html>
