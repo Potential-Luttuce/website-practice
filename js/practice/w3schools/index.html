@@ -8,15 +8,32 @@
 </head>
 <body>
     <h1>This Site has Inline JS ONLY! for learning</h1>
+    <h4> Change Text with js .innerHTML</h4>
     <p id="demo">Js can take this text</p>
 
-    <!-- Click chnages text -->
+<!-- Click chnages text -->
     <button type="button" onclick='document.getElementById("demo").innerHTML = 
-    "Into ne text"'> Click Me to change above text!</button><hr>
+    "Into new text"'> Click Me to change above text!</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = 
+    "Js can thake this text"'> Click Me to go b ack to original text!</button><hr>
 
-    <p id="change-color"> Change my color to red or Yellow!</p>
+<!-- changes image - light on or off -->
+    <h4>change image with js .src</h4>
+    <button onclick="document.getElementById('lightbulb').src='images/lightbulb-on.jpg'">
+    Turn light on!</button>
+    <img id="lightbulb" src="images/lightbulb-off.jpg">
+    <button onclick="document.getElementById('lightbulb').src='images/lightbulb-off.jpg'">
+        Turn light off!</button><hr>
 
-    <button></button>
+<!-- Changing css - .style -->
+    <h4>Change style with js .style</h4>
+
+    <p id="change-size" style="font-size: 15px;"> Change my size!</p>
+
+    <button type="button" onclick="document.getElementById('change-size').style.fontSize = '35px'"
+    > click here to enlarge</button>
+    <button type="button" onclick="document.getElementById('change-size').style.fontSize = '15px'"
+    > click here to shrink</button>
    
 </body>
 </html>

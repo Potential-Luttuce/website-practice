@@ -19,5 +19,8 @@
 
 ## CSS
 
+## JS
+- This Directory will hold variopus HTML and JS files while I work my way through exercises and learn fundamentals of Javascript
+
 
 [def]: https://potential-luttuce.github.io/website-practice/sites/blog/index.html
