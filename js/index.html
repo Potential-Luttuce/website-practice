@@ -10,9 +10,21 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <button>click me!</button>
     <script>
-        //This is Javascript!!
-        console.log("Hello, World!")
+        // //This is Javascript!!
+        // console.log("Hello, World!")
+        // console.log(joined); //Hello, howe are you?
+        
+        //Below code prompts user for name within an alert than displays 
+        // name to user via alert, also prints in cosnole log 
+        const button = document.querySelector("button");
+        function greet() {
+            const name = prompt("What is your name?");
+            alert(`Hello ${name}, nice to meet you!`);
+            console.log(name);
+        }
+        button.addEventListener("click", greet);
     </script>
 </body>
 </html>

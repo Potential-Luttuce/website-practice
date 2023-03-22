@@ -17,17 +17,41 @@
 // let color = COLOR_ORANGE;
 // alert(color);
 
+// // Numbers 
 // console.log(2+2);
 // console.log(1+2+3+4+5+6);
 // console.log(((4+6+9)/77));
-
 // let a = 10;
 // console.log(a);
-
 // console.log(9*a);
+// const MAX = 57;
+// let actual = MAX - 13;
+// let percentage = actual / MAX;
+// console.log(percentage);
 
-const MAX = 57;
-let actual = MAX - 13;
-let percentage = actual / MAX;
+//Strings 
 
-console.log(percentage);
+const string = "The revolution will not be televised";
+console.log(string); //  The revolution will not be televised
+badString = string;
+console.log(badString); //The revolution will not be televised
+
+//below lets you have ' in middle of text when using ''
+const bigMouth = 'I\'ve got a big mouth!';
+console.log(bigMouth); //I've got a bit Mouth!
+
+//concatinating strings
+//use a back tic ` as a template literal?
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting) //Hello, chris
+
+const one = "Hello, ";
+const two= "How are you?";
+const joined = `${one}${two}`;
+//can also be done like this
+const first = "Michael";
+const last = "Cuesta";
+const full_name = first + ' ' + last;
+console.log(full_name); //Michael Cuesta
+console.log(`${first} ${last}`); // prints Michael Cuesta exactly as inputed 
