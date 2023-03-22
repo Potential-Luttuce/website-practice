@@ -57,11 +57,11 @@
         document.getElementById('greet').innerHTML = substr;
     </script>
     <hr>
-    
+
 <!-- Replacing strings content-->
     <h2>Replacing string conent</h2>
     <p>.replace("old-text", "new-text")</p>
-    <p id="replace">Michael Cuesta</p>
+    <p id="replace">Michael Cuesta Michael</p>
     <button type="button" onclick="myfunction()">Click to replace content in string!</button>
     <script>
         function myfunction() {
@@ -69,6 +69,33 @@
             document.getElementById('replace').innerHTML = replaceText.replace("Michael", "Mike");
         }
     </script>
+    <p>Only gets first found match, so use .replaceall() to get all</p>
+    <button type="button" onclick="myfunction2()">Click to replace content in string!</button>
+    <script>
+        function myfunction2() {
+            let replaceallText = document.getElementById('replace').innerHTML;
+            document.getElementById('replace').innerHTML = replaceallText.replaceAll("Michael", "Mike");
+        }
+    </script><hr>
 
+<!-- Upper & Lowercase -->
+    <h2>Upper and lowercase</h2>
+    <p>.toLowerCase and .toUpperCase</p>
+    <p> String: Hello world!</p>
+    <p id="case">hello, world!</p>
+    <button type="button" onclick="myfunctionupper()">Click to chnage to upper case</button>
+    <script>
+        function myfunctionupper() {
+            let lower_text = document.getElementById('case').innerHTML;
+            document.getElementById('case').innerHTML = lower_text.toUpperCase();
+        }
+    </script>
+     <button type="button" onclick="myfunctionlower()">Click to chnage to lowercase</button>
+     <script>
+         function myfunctionlower() {
+             let lower_text = document.getElementById('case').innerHTML;
+             document.getElementById('case').innerHTML = lower_text.toLowerCase();
+         }
+     </script><hr>
 </body>
 </html>
