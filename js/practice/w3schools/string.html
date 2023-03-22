@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Strings</h1><hr>
+<!-- Length -->
+    <h4>Length Property: .Length</h4>
+    <p>String: abcdefghijklmnopqrstuvwxyz</p>
+    <p>Length of string:</p>
+    <p id="demo"></p>
+    <script>
+        let text = "abcdefghijklmnopqrstuvwxyz";
+        document.getElementById('demo').innerHTML = text.length;
+    </script><hr>
+
+<!-- Extracting string parts -->
+    <h2>Extracting Strings parts: slice, substring, substr</h2>
+    <h3>*Omitting arg2 will grab starting point then rest of string*</h3>
+    <h5>.Slice(arg1,arg2)</h5>
+    <!-- slice -->
+    <p>String: abcdefghijklmnopqrstuvwxyz</p>
+    <p> using slice() to extract a specific spot of a string (index 4 through (not ncluding) 10):</p>
+    <p id="slice"></p>
+    <script>
+        //Text from above example
+        let slicedText = text.slice(4,10);
+        document.getElementById('slice').innerHTML = slicedText; //takes var and replaces
+        //it into our target variable id of slice
+    </script>
+    
+    <!-- substring -->
+    <h5>.substring(arg1, arg2)</h5>
+    <p>Similar to slice except negative values are treated as 0</p>
+    <p>String: Apple, Banana, Kiwi</p>
+    <p id="fruit"></p>
+
+    <script>
+        let fruitString = "Apple, Banana, Kiwi";
+        let substringFruit = fruitString.substring(7, 13);
+        document.getElementById('fruit').innerHTML = substringFruit;
+    </script>
+    
+    <!-- substr -->
+    <h5>.substr(arg1, arg2)</h5>
+    <p>Similar to slice except arg1 is starting spot, arg2 is length of extracted string</p>
+    <p>String: hi my name is</p>
+    <p id="greet"></p>
+
+    <script>
+        let string = "Hi, My name Is";
+        let substr = string.substr(4, 7); //Start at index 4 - M then 7 spaces after
+        document.getElementById('greet').innerHTML = substr;
+    </script>
+    <hr>
+    
+<!-- Replacing strings content-->
+    <h2>Replacing string conent</h2>
+    <p>.replace("old-text", "new-text")</p>
+    <p id="replace">Michael Cuesta</p>
+    <button type="button" onclick="myfunction()">Click to replace content in string!</button>
+    <script>
+        function myfunction() {
+            let replaceText = document.getElementById('replace').innerHTML;
+            document.getElementById('replace').innerHTML = replaceText.replace("Michael", "Mike");
+        }
+    </script>
+
+</body>
+</html>
