@@ -113,7 +113,31 @@
             let text3 = text1.concat(" ", text2);
             document.getElementById('concat-string').innerHTML = text3;
         }
-     </script>
+     </script><hr>
 
+<!-- Trrim -->
+     <h2>Trim & TrimStart</h2>
+     <h3>.trim() & .trimStart()</h3>
+     <button type = 'button' style="background-color: blue; color: white;" 
+     onclick="trimfunction1()">Use Trim on me!</button>
+     <button type = 'button' style="background-color:blueviolet; color: white;"
+     onclick="trimfunction2">Use trimStart on me</button>
+     <p id='trim1'></p>
+     <p id='trim2'></p>
+
+
+     <script>
+        function trimfunction1() {
+            let trim1 = "     Hello       ";
+            let trim2 = trim1.trim();
+            document.getElementByID("trim1").innerHTML = trim2;
+        }
+
+        function trimfunction2() {
+            let trim3 = "      Hello";
+            let trim4 = trim3.trimStart();
+            document.getElementByID("trim2").innerHTML = trim4;
+        }
+     </script>
 </body>
 </html>
