@@ -54,3 +54,30 @@
 
 // Get number corresponding to the current month, with 0 being January and 11 being December
 const month = new Date().getMonth();
+
+switch (month) {
+    // dec jan feb 
+    case 11:
+    case 0:
+    case 1:
+        console.log("Winter");
+        break;
+    // mar apr may
+    case 2:
+    case 3:
+    case 4:
+        console.log("spring");
+        break;
+    // jun jul aug
+    case 5:
+    case 6:
+    case 7:
+        console.log("Summer");
+        break;
+    // sep oct nov
+    case 8:
+    case 9:
+    case 10:
+        console.log("Fall");
+        break;
+}
