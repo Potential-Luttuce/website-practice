@@ -8,10 +8,12 @@
 </head>
 <body>
     <h1>Here be JavaScript functions</h1>
+    <h1>Dont forget, some things may be commented out!'</h1>
     
     <script>
         // Print hello mike
         console.log('Hello, Mike!');
+        console.log('Dont forget, some things may be commented out!')
 
 
         // add7 function
@@ -20,19 +22,31 @@
             number = parseInt(number) + 7;
             return number;
         }
-        let n = prompt('Enter a number to add 7to it');
-        console.log(add7(n));
+        //let n = prompt('Enter a number to add 7to it');
+        // console.log(add7(n));
 
         // multiply
         // returns product of two numbers
-        let a = prompt('Enter first number to multiply');
-        let b = prompt('second number');
+        // let a = prompt('Enter first number to multiply');
+        // let b = prompt('second number');
         function multiply(a, b) {
             let product = parseInt(a) * parseInt(b);
-            return product
+            return product;
         }
-        console.log(multiply(a,b));
+        //console.log(multiply(a,b));
 
+        // capitalize
+        //takes string and capitalizes first letter
+
+        //prompt user for string 
+        let string = prompt('Enter a string');
+
+        function capitalize(s) {
+            s = s.toUpperCase();
+            let slicedText = s.slice(0, 1); //grabs first element in string
+            return slicedText;
+        }
+        console.log(capitalize(string));
     </script>
 </body>
 </html>
