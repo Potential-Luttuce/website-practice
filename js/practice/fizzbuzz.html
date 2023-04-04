@@ -12,7 +12,7 @@
     
     <script>
         // FIZBUZZ //
-
+        console.log('Hello, Mike!\nFizzBuzz!');
         //User entersa number (prompt)
         // loop from 1 to entered number
         // if i number is divisible by 3 then 'fizz'
@@ -24,7 +24,15 @@
 
         // for loop - prints out i until number
         for (let i = 1; i <= number; i++) {
-            console.log(i);
+            if ( i % 3 === 0 && i % 5 === 0) {
+                console.log('FizzBuzz');
+            } else if ( i % 3 === 0) {
+                console.log('Fizz');
+            } else if (i % 5 === 0) {
+                console.log('Buzz');
+            } else {
+                console.log(i);
+            }
         }
 
     </script>
