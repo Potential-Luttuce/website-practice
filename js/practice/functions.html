@@ -9,6 +9,30 @@
 <body>
     <h1>Here be JavaScript functions</h1>
     
-    <script></script>
+    <script>
+        // Print hello mike
+        console.log('Hello, Mike!');
+
+
+        // add7 function
+        // takes n returns n + 7
+        function add7(number) {
+            number = parseInt(number) + 7;
+            return number;
+        }
+        let n = prompt('Enter a number to add 7to it');
+        console.log(add7(n));
+
+        // multiply
+        // returns product of two numbers
+        let a = prompt('Enter first number to multiply');
+        let b = prompt('second number');
+        function multiply(a, b) {
+            let product = parseInt(a) * parseInt(b);
+            return product
+        }
+        console.log(multiply(a,b));
+
+    </script>
 </body>
 </html>
