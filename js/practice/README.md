@@ -6,3 +6,4 @@
 * Given your inputs, what are the steps necessary to return the desired output?
 
 * The last question is where you will write out an algorithm to solve the problem.
+(Algorithm in pseudocode)
