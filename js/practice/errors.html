@@ -7,6 +7,19 @@
     <title>Errors</title>
 </head>
 <body>
-    <h1>This page is all about </h1>
+    <h1>This page is all about JS errors (check Log)</h1>
+
+    <button onclick="">Red Error</button>
+
+    <script>
+        //Create button that prompts for name and displays name in alert
+        const helloButton = document.querySelector("button");
+        function greet() {
+            let userName = prompt('Please enter your first name');
+            console.log('userName: ${userName} saved for user');
+            console.log(`userName: ${userName} displayed in popup window`);
+        }
+        button.addEventListener('click', greet());
+    </script>
 </body>
 </html>
