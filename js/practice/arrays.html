@@ -6,12 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike's Arrays</title>
 
-    <script src="w3schools/arrays.js"></script>
+    <!-- <script src="w3schools/arrays.js"></script> -->
     
 </head>
 <body style="background: rgba(194, 50, 50, 0.597);">
     <h1>Javascripts Arrays (console)</h1>
 
+    
+    // print array to document html
+    <h1>Print to Screen via get element by id.innerhtml</h1>
+    <p id="demo1">x</p><hr>
 
+    // Accessing an Arrays elements //
+    <h1>Prints out carsMike[2000]</h1>
+    <p id="carsMike"></p><hr>
+
+    // Changing an array element //
+    <h1>Changing array elements</h1>
+    <p>printing out original cars array with changed [0] element</p>
+    <p id="demo2"></p><hr>
+
+    //Arrays as objects //arrays use NAMES // 
+    <h1>person.firstName returns Michael</h1>
+    <p id="demo3"></p><hr>
+
+    //Arrays can be special objects // they can fold other objects
+    <h1>Date, myFunction, carsMike all in an array</h1>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p><hr>
+
+    // Length using fruits //
+    <h1>Returns length of an Array</h1>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p><hr>
+
+    // Looping Through an Array //
+    <h1>Looping Through an Array</h1>
+    <p></p>
+    <p></p>
+
+
+
+
+    <script>
+// Javascript practice for arrays 
+    //const array_name = ["item1", "item2", ...]; 
+        console.log('Mike is  practicing arrays');
+// print array to document html //
+        const cars = ["Nissan", " Jeep", " Toyota"];
+        document.getElementById("demo1").innerHTML = cars;  // OR stacked //
+        const carsMike = ["Hoopdy", "wagon", "giddy-up!"];
+// Accessing an Arrays elements //
+        let mikesCar = carsMike[2];
+        document.getElementById("carsMike").innerHTML = mikesCar;
+ // Changing an array element //
+        cars[0] = 'Lambo';
+        document.getElementById('demo2').innerHTML = cars;
+//Arrays as objects //arrays use NAMES // person.firstName returns Michael
+        const person = {firstname: "MICHAEL", 
+                        lastname: "Cuesta",
+                        age: 25};
+        document.getElementById('demo3').innerHTML = person.firstname.toLowerCase();
+//Arrays can be special objects // they can fold other objects
+        function myFunction() {
+            console.log('This is Mikes Function, yo!');
+        }
+        const myArray = [];
+        myArray[0] = Date;
+        myArray[1] = myFunction;
+        myArray[2] = carsMike;
+        document.getElementById('demo4').innerHTML = myArray[0];
+        document.getElementById('demo5').innerHTML = myArray[1];
+        document.getElementById('demo6').innerHTML = myArray[2];
+
+        // Length using fruits //
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo7").innerHTML = `The Length Of The Fruits Array is ${fruits.length}.`;
+        document.getElementById("demo8").innerHTML = fruits;
+        let fruit = fruits[fruits.length - 1];
+        document.getElementById("demo9").innerHTML = `The lest element in the fruit array is ${fruit}.`;
+
+        // Looping through an array /./
+        
+    </script>
 </body>
 </html>
