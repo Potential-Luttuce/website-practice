@@ -1,68 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike's Arrays</title>
-
-    <script src="arrays.js"></script>
-    
-</head>
-<body style="background: rgba(194, 50, 50, 0.597);">
-    <h1>Javascripts Arrays (console)</h1>
-
-    
-// print array to document html
-    <h1>Print to Screen via get element by id.innerhtml</h1>
-    <p id="demo1">x</p><hr>
-
-// Accessing an Arrays elements //
-    <h1>Prints out carsMike[2000]</h1>
-    <p id="carsMike"></p><hr>
-// Changing an array element //
-    <h1>Changing array elements</h1>
-    <p>printing out original cars array with changed [0] element</p>
-    <p id="demo2"></p><hr>
-
-//Arrays as objects //arrays use NAMES // 
-    <h1>person.firstName returns Michael</h1>
-    <p id="demo3"></p><hr>
-
-//Arrays can be special objects // they can fold other objects
-    <h1>Date, myFunction, carsMike all in an array</h1>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
-    <p id="demo6"></p><hr>
-
-// Length using fruits //
-    <h1>Returns length of an Array</h1>
-    <p id="demo7"></p>
-    <p id="demo8"></p>
-    <p id="demo9"></p><hr>
-
-// Looping Through an Array //
-    <h1>Looping Through an Array</h1>
-    <h3>For Loop</h3>
-    <p id="demo10"></p>
-    <h1>Huge tip Array.forEach()</h1>
-    <p id="demo11"></p><hr>
-
-// Appeniding to an Array // Adding elements 
-    <h1>Appending to an Array</h1>
-    <p> A List of languages I like</p>
-    <p id="demo12"></p>
-    <p>Plus one more!</p>
-    <p id="demo13"></p>
-    <p id="demo14"></p>
-
-    <script>
-                                        // Javascript practice for arrays 
+                                       // Javascript practice for arrays 
 // const points = new Array();
 // const points = [];
 //const array_name = ["item1", "item2", ...]; 
 // Create an array with one element:
-        const oneElementArray = [88];
+const oneElementArray = [88];
 // Create an array with 40 undefined elements:
         const undefinedArray = new Array(40);  
         console.log('Mike is  practicing arrays');
@@ -122,7 +63,3 @@
         languages.push("JavaScript"); 
         document.getElementById('demo13').innerHTML = languages;
        
-
-    </script>
-</body>
-</html>
