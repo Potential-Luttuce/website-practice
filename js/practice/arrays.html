@@ -60,22 +60,50 @@
     <h1>Remove or Add element to an array</h1>
     <p id="demo17"></p>
     //push - add -appened
+    // .push(New-element")
     // Appeniding to an Array // Adding elements 
     <h1>Appending to an Array</h1>
     <p> A List of languages I like</p>
     <p id="demo12"></p>
     <p>Plus one more!</p>
-    <p id="demo13"></p><hr>
-// 
-    <p id="demo18"></p><hr>
+    <p id="demo13"></p>
+// appened using length
+    <h1>append with length</h1>
+    <p id="lengthApp"></p>
+    //shift - same is pop but for first element
+    //we remove Python from languages
+    <p id="demo18"></p>
     <p id="demo19"></p>
-    <p id="demo20"></p>
-    <p id="demo21"></p>
+    <p id="demo20"></p><
+//unshift - adds to start of array also returns length of new array 
+    <h3>Unshift('New');</h3>
+    <p id="demo21"></p><hr>
+// Delete - leaves undefined holes in array - remove element from array
+    <h1>Delete leaves undefined holes in array</h1>
+    <p>delete Array[i]; This removes ith element from Array</p><hr>
+//Concatinating Arrays - merge arrays
+    <h1>Concat Arrays together</h1>
     <p id="demo22"></p>
+    <p id="demo23"></p>
+    // merging or concate with value
+    <p id="demo24"></p><hr>
+// Flattening an array ??
+    <h1>// Flattening an array ??</h1>
+    <p>const myArr = [[1,2],[3,4],[5,6]];
+        const newArr = myArr.flat();
+        document.getElementById("demo").innerHTML = newArr;</p>
+    <p id="demo25"></p>
+    <p id="demo26"></p>
+    <p id="demo27"></p>
+    <p id="demo28"></p>
+    <p id="demo29"></p>
 
 
     <script>
                                         // Javascript practice for arrays 
+        function displayText(Id, value) {
+            document.getElementById(Id).innerHTML = value;
+        }
 // const myArray = new Array();
 // const myArray = [];
 //const array_name = ["item1", "item2", ...]; 
@@ -139,13 +167,46 @@
             document.getElementById("demo16").innerHTML = cars.join(" ~ ");
 // Popping or pushing elements out of or into an array
             let poppedFruit = fruits.pop();
-            document.getElementById('demo17').textContent = poppedFruit;
+            displayText('demo17', poppedFruit);
+            let length = fruits.push("Kiwi");
 // Adding Array Elements
 // appending Elements 
         const languages = ["Python", "R", "HTML"];
         document.getElementById('demo12').innerHTML = languages;
         languages.push("JavaScript"); 
-        document.getElementById('demo13').innerHTML = languages
+        document.getElementById('demo13').innerHTML = languages;
+//appened element using length of array
+        languages[languages.length] = 'SQL';
+        displayText('lengthApp', languages);
+//shift - remove first element lik pop() // unshift add to start
+        //remove and store in variable
+        document.getElementById('demo18').innerHTML = languages;
+        let shiftElement = languages.shift();
+        document.getElementById('demo19').innerHTML = shiftElement;
+        document.getElementById('demo20').innerHTML = languages;
+        //unshift adds element to beginning and shifs older arrays up 1 index
+        let unshift = languages.unshift('CSS');
+        document.getElementById('demo21').innerHTML = languages;
+// Delete - leaves undefined holes in array
+        delete fruits[0];
+//Concateinate arrays together
+        const myArrays = cars.concat(languages);
+        const allMyArrays = cars.concat(carsMike, languages);
+        document.getElementById("demo22").innerHTML = myArrays;
+        document.getElementById("demo23").innerHTML = allMyArrays;
+        // merging or concate with value
+        const aNewValue = carsMike.concat("Bike");
+        document.getElementById('demo24').innerHTML = aNewValue;
+// Flattening an array ??
+    const myArr = [[1,2],[3,4],[5,6]];
+    const newArr = myArr.flat();
+    document.getElementById("demo25").innerHTML = newArr;
+// loops through an array of cats
+    const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];       
+    for (const cat of cats) {
+        console.log(cat);
+    }
+
 
     </script>
 </body>
