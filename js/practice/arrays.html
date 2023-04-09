@@ -44,7 +44,8 @@
 
     // Looping Through an Array //
     <h1>Looping Through an Array</h1>
-    <p></p>
+    <h3>For Loop</h3>
+    <p id="demo10"></p>
     <p></p>
 
 
@@ -80,16 +81,22 @@
         document.getElementById('demo4').innerHTML = myArray[0];
         document.getElementById('demo5').innerHTML = myArray[1];
         document.getElementById('demo6').innerHTML = myArray[2];
-
-        // Length using fruits //
+// Length using fruits //
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         document.getElementById("demo7").innerHTML = `The Length Of The Fruits Array is ${fruits.length}.`;
         document.getElementById("demo8").innerHTML = fruits;
         let fruit = fruits[fruits.length - 1];
         document.getElementById("demo9").innerHTML = `The lest element in the fruit array is ${fruit}.`;
+// Looping through an array /./
+// Adds a list element to the <ul> parent on each itteration 
+        let arrayLength = fruits.length;
+        let text = "<ul>";
+            for (let i = 0; i < arrayLength + 3; i++) {
+                text += "<li>" + fruits[i ] + "</li>";
+            }
+            text += "</ul>";
+        document.getElementById('demo10').innerHTML = text;
 
-        // Looping through an array /./
-        
     </script>
 </body>
 </html>
