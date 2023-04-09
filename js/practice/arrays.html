@@ -12,7 +12,6 @@
 <body style="background: rgba(194, 50, 50, 0.597);">
     <h1 style="display: flex; justify-content: center;">
         Javascripts Arrays (console)</h1>
-
     
     <div style="display: flex">
 // print array to document html
@@ -32,42 +31,53 @@
         <p>printing out original cars array with changed [0] element</p>
         <p id="demo2"></p><hr>
     </div>
-
 //Arrays as objects //arrays use NAMES // 
     <h1>person.firstName returns Michael</h1>
     <p id="demo3"></p><hr>
-
 //Arrays can be special objects // they can fold other objects
     <h1>Date, myFunction, carsMike all in an array</h1>
     <p id="demo4"></p>
     <p id="demo5"></p>
     <p id="demo6"></p><hr>
-
 // Length using fruits //
     <h1>Returns length of an Array</h1>
     <p id="demo7"></p>
     <p id="demo8"></p>
     <p id="demo9"></p><hr>
-
 // Looping Through an Array //
     <h1>Looping Through an Array</h1>
     <h3>For Loop</h3>
     <p id="demo10"></p>
     <h1>Huge tip Array.forEach()</h1>
     <p id="demo11"></p><hr>
-
-// Appeniding to an Array // Adding elements 
+//Convert Arrays into a string //
+    <h1>.toString() to convert to string</h1>
+    <p id="demo14"></p>
+    //join method (can specify separator)
+    <p id="demo15"></p>
+    <p id="demo16"></p><hr>
+// popping and pushing
+    <h1>Remove or Add element to an array</h1>
+    <p id="demo17"></p>
+    //push - add -appened
+    // Appeniding to an Array // Adding elements 
     <h1>Appending to an Array</h1>
     <p> A List of languages I like</p>
     <p id="demo12"></p>
     <p>Plus one more!</p>
-    <p id="demo13"></p>
-    <p id="demo14"></p>
+    <p id="demo13"></p><hr>
+// 
+    <p id="demo18"></p><hr>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+
 
     <script>
                                         // Javascript practice for arrays 
-// const points = new Array();
-// const points = [];
+// const myArray = new Array();
+// const myArray = [];
 //const array_name = ["item1", "item2", ...]; 
 // Create an array with one element:
         const oneElementArray = [88];
@@ -85,7 +95,7 @@
         cars[0] = 'Lambo';
         document.getElementById('demo2').innerHTML = cars;
 //Arrays as objects //arrays use NAMES // person.firstName returns Michael
-        const person = {firstname: "MICHAEL", 
+        const person = {firstname: "MICHAEL",  // Stacked ^
                         lastname: "Cuesta",
                         age: 25};
         document.getElementById('demo3').innerHTML = person.firstname.toLowerCase();
@@ -123,13 +133,19 @@
         words += "<li>" + value + "</li>";
         }
         document.getElementById('demo11').innerHTML = words;
+// Convert ARRAYS to STRING // .toString() //
+            document.getElementById('demo14').innerHTML = carsMike.toString();
+            document.getElementById('demo15').innerHTML = cars.join();
+            document.getElementById("demo16").innerHTML = cars.join(" ~ ");
+// Popping or pushing elements out of or into an array
+            let poppedFruit = fruits.pop();
+            document.getElementById('demo17').textContent = poppedFruit;
 // Adding Array Elements
 // appending Elements 
         const languages = ["Python", "R", "HTML"];
         document.getElementById('demo12').innerHTML = languages;
         languages.push("JavaScript"); 
-        document.getElementById('demo13').innerHTML = languages;
-       
+        document.getElementById('demo13').innerHTML = languages
 
     </script>
 </body>
