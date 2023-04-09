@@ -13,43 +13,47 @@
     <h1>Javascripts Arrays (console)</h1>
 
     
-    // print array to document html
+// print array to document html
     <h1>Print to Screen via get element by id.innerhtml</h1>
     <p id="demo1">x</p><hr>
 
-    // Accessing an Arrays elements //
+// Accessing an Arrays elements //
     <h1>Prints out carsMike[2000]</h1>
     <p id="carsMike"></p><hr>
-
-    // Changing an array element //
+// Changing an array element //
     <h1>Changing array elements</h1>
     <p>printing out original cars array with changed [0] element</p>
     <p id="demo2"></p><hr>
 
-    //Arrays as objects //arrays use NAMES // 
+//Arrays as objects //arrays use NAMES // 
     <h1>person.firstName returns Michael</h1>
     <p id="demo3"></p><hr>
 
-    //Arrays can be special objects // they can fold other objects
+//Arrays can be special objects // they can fold other objects
     <h1>Date, myFunction, carsMike all in an array</h1>
     <p id="demo4"></p>
     <p id="demo5"></p>
     <p id="demo6"></p><hr>
 
-    // Length using fruits //
+// Length using fruits //
     <h1>Returns length of an Array</h1>
     <p id="demo7"></p>
     <p id="demo8"></p>
     <p id="demo9"></p><hr>
 
-    // Looping Through an Array //
+// Looping Through an Array //
     <h1>Looping Through an Array</h1>
     <h3>For Loop</h3>
     <p id="demo10"></p>
-    <p></p>
+    <h1>Huge tip Array.forEach()</h1>
+    <p id="demo11"></p><hr>
 
-
-
+// Appeniding to an Array // Adding elements 
+    <h1>Appending to an Array</h1>
+    <p> A List of languages I like</p>
+    <p id="demo12"></p>
+    <p>Plus one more!</p>
+    <p id="demo13"></p>
 
     <script>
 // Javascript practice for arrays 
@@ -96,6 +100,20 @@
             }
             text += "</ul>";
         document.getElementById('demo10').innerHTML = text;
+// .forEach()
+        let words = "<ul>";
+        fruits.forEach(fruitFunction);
+        words += "</ul>";
+        function fruitFunction(value) {
+        words += "<li>" + value + "</li>";
+        }
+        document.getElementById('demo11').innerHTML = words;
+// Adding Array Elements
+// appending Elements 
+        const languages = ["Python", "R", "HTML"];
+        document.getElementById('demo12').innerHTML = languages;
+        languages.push("JavaScript"); 
+        document.getElementById('demo13').innerHTML = languages;
 
     </script>
 </body>
