@@ -6,24 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike's Arrays</title>
 
-    <script src="arrays.js"></script>
+    <!-- <script src="arrays.js"></script> -->
     
 </head>
 <body style="background: rgba(194, 50, 50, 0.597);">
-    <h1>Javascripts Arrays (console)</h1>
+    <h1 style="display: flex; justify-content: center;">
+        Javascripts Arrays (console)</h1>
 
     
+    <div style="display: flex">
 // print array to document html
-    <h1>Print to Screen via get element by id.innerhtml</h1>
-    <p id="demo1">x</p><hr>
-
+        <div>
+            <h1>Print to Screen via get element by id.innerhtml</h1>
+            <p id="demo1"></p><hr>
+        </div>>
 // Accessing an Arrays elements //
-    <h1>Prints out carsMike[2000]</h1>
-    <p id="carsMike"></p><hr>
+        <div>
+            <h1>Prints out carsMike[2]</h1>
+            <p id="carsMike"></p><hr>
+        </div>
+    </div><hr>
+
 // Changing an array element //
-    <h1>Changing array elements</h1>
-    <p>printing out original cars array with changed [0] element</p>
-    <p id="demo2"></p><hr>
+        <h1>Changing array elements</h1>
+        <p>printing out original cars array with changed [0] element</p>
+        <p id="demo2"></p><hr>
+    </div>
 
 //Arrays as objects //arrays use NAMES // 
     <h1>person.firstName returns Michael</h1>
@@ -67,9 +75,9 @@
         const undefinedArray = new Array(40);  
         console.log('Mike is  practicing arrays');
 // print array to document html //
-        const cars = ["Nissan", " Jeep", " Toyota"];
-        document.getElementById("demo1").innerHTML = cars;  // OR stacked //
         const carsMike = ["Hoopdy", "wagon", "giddy-up!"];
+        const cars = ["Nissan", " Jeep", " Toyota"];
+        document.getElementById("demo1").innerHTML = `${cars}--${carsMike}`;  // OR stacked //
 // Accessing an Arrays elements //
         let mikesCar = carsMike[2];
         document.getElementById("carsMike").innerHTML = mikesCar;
