@@ -4,11 +4,13 @@ const red = document.createElement('p');
 red.style.color = 'red';
 red.textContent = "Hey! I'm Red!";
 container.appendChild(red);
+
 // exercise 2
 const blueText = document.createElement('h3');
 blueText.style.color = 'blue';
 blueText.textContent = "Hey! I'm a Blue h3";
 container.appendChild(blueText);
+
 // exercise 3
 const newContainer = document.createElement('div');
 const firstElement = document.createElement('div');
@@ -26,7 +28,13 @@ function show(){
 //3 methods for a click
 const btn = document.querySelector('#btn'); // + js code in html code 
 btn.onclick = () => alert("Hello, World!2"); //arrow function
-const btn = dosument.querySelector('#btn');
-btn.addEventListener('click', () => {
+const bttn = document.querySelector('#bttn');
+bttn.addEventListener('click', () => {
     alert("Hello, world3");
 })
+
+// 3 methods for calling events 
+// goes with above
+function alertFunction() {
+    alert("You did it!");
+}
