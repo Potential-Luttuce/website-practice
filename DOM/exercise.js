@@ -35,6 +35,27 @@ bttn.addEventListener('click', () => {
 
 // 3 methods for calling events 
 // goes with above
+//1
 function alertFunction() {
     alert("You did it!");
 }
+//2
+const two = document.querySelector('#two');
+two.onclick = alertFunction;
+
+//3
+const three = document.querySelector('#three');
+three.addEventListener('click', function (e) {
+    // console.log(e); //prints stuff to console
+    // console.log(e.target); //prints to console element from DOM
+    e.target.style.background = "blue"; //changes style of element
+});
+
+//Attaching listeners tog roups of nodes
+//button is node list - similar to array but not 100%
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => { //for each of our buttons in the node list
+   button.addEventListener('click', () => {
+    console.log(button.id);
+   });
+});// prints to console the #id of the element clicked
